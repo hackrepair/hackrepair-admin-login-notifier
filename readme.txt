@@ -97,6 +97,9 @@ The Hack Repair Guy's Admin Login Notifier will auto save your email account upo
 
 == Changelog ==
 
+= 0.1.1 =
+* Updated description.
+
 = 0.1.0 =
 * The Hack Repair Guy's Admin Login Notifier is born!
 
