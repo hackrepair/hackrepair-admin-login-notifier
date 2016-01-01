@@ -1,6 +1,6 @@
 === The Hack Repair Guy's Admin Login Notifier ===
 
-Contributors: tvcnet
+Contributors: hackrepair, tvcnet
 Tags: admin login, email notification, login notification, login email, admin email
 Donate link: https://hackrepair.com/about/hackrepair-admin-login-notifier
 Requires at least: 4.2
