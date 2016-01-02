@@ -46,10 +46,10 @@ class HackRepair_Admin_Login_Notifier {
 				'callback' => '',
 				'options' => array(
 					'notify' => array(
-						'title'=>__( 'Send Notifications', 'hackrepair-admin-login-notifier' ),
+						'title'=>__( 'Email Notifications to:', 'hackrepair-admin-login-notifier' ),
 						'args' => array (
 							'values' => $user_list,
-							'description' => __( 'Who shoud be notified when an admin-level user logs in?', 'hackrepair-admin-login-notifier' ),
+							'description' => __( 'The email contacts you select above will be notified each time an administrator logs into this dashboard', 'hackrepair-admin-login-notifier' ),
 						),
 						'callback' => 'checklist',
 					),
