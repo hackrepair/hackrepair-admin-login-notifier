@@ -80,7 +80,7 @@ class HackRepair_Admin_Login_Notifier {
 	private static function _notify( $user ) {
 		$data = array(
 			'subject' => __( '%domain% - Admin %user_login% logged in at %time%', 'hackrepair-admin-login-notifier' ),
-			'content' => __( "User '%user_login%' has successfully logged into %domain% from %ip% on %date%, at %time% \r\n\r\nAdmin notification provided by %plugin_title_full%, %plugin_link%", 'hackrepair-admin-login-notifier' ),
+			'content' => __( "User '%user_login%' has successfully logged into %domain% from %ip%, %date%, at %time% \r\n\r\nAdmin notification provided by %plugin_title_full%, %plugin_link%", 'hackrepair-admin-login-notifier' ),
 		);
 		$data['subject'] = apply_filters( 'hackrepair_admin_login_notifier_subject', $data['subject'], $user );
 		$data['content'] = apply_filters( 'hackrepair_admin_login_notifier_content', $data['content'], $user );
