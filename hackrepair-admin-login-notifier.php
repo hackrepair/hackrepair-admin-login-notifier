@@ -49,7 +49,7 @@ class HackRepair_Admin_Login_Notifier {
 						'title'=>__( 'Email Notifications to:', 'hackrepair-admin-login-notifier' ),
 						'args' => array (
 							'values' => $user_list,
-							'description' => __( 'The email contacts you select above will be notified each time an administrator logs into this dashboard', 'hackrepair-admin-login-notifier' ),
+							'description' => __( 'The email contacts selected above will be notified each time an administrator logs into this dashboard', 'hackrepair-admin-login-notifier' ),
 						),
 						'callback' => 'checklist',
 					),
