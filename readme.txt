@@ -23,7 +23,7 @@ Stop the hackers before they eat your lunch.
 
 * With notification of each Administrator account login emailed to you, you may be able take action before hackers edit or delete your content.
 
-With The Hack Repair Guy's Administrator Login Notifier, tailored to admin notification only, you'll have a professional login notification system in place in seconds. Mo' fun, less bloat. Enjoy!
+With The Hack Repair Guy's Administrator Login Notifier, tailored to admin notification only, you'll have a professional login notification system in place in seconds.
 
 “The secret to getting ahead is getting started.” — Mark Twain
 
