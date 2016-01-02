@@ -5,7 +5,7 @@ Tags: admin login, email notification, login notification, login email, admin em
 Donate link: https://hackrepair.com/about/hackrepair-admin-login-notifier
 Requires at least: 4.2
 Tested up to: 4.4
-Stable tag: 0.1.1
+Stable tag: 0.2.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,6 +53,8 @@ Short answer: Change the setting in `WP Admin > Settings > General > Email Addre
 
 Long answer: The Hack Repair Guy's Admin Login Notifier uses WordPress' default admin email setting - this notification will be sent to the same email address WordPress uses to send you other notifications.
 
+Additional notification recipients can be selected via plugin settings page (`WP Admin > Settings > Admin Login Notifier`). Just select which admin-level users should be notified. 
+
 **3. Why did you create this plugin?**
 
 Short answer: I tire of unnecessary over complication.
@@ -96,6 +98,9 @@ The Hack Repair Guy's Admin Login Notifier will auto save your email account upo
 == Screenshots ==
 
 == Changelog ==
+
+= 0.2.0 =
+* Settings page added to select aditional notification recipients.
 
 = 0.1.1 =
 * Updated description.
