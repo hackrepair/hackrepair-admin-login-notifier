@@ -4,7 +4,7 @@ Plugin Name: The Hack Repair Guy's Admin Login Notifier
 Plugin URI: http://wordpress.org/extend/plugins/hackrepair-admin-login-notifier/
 Description: Receive email notification each time an Administrator logs into your WordPress dashboard.
 Author: Jim Walker, The Hack Repair Guy
-Version: 0.2.2
+Version: 0.2.3
 Text Domain: hackrepair-admin-login-notifier
 Author URI: http://hackrepair.com/hackrepair-admin-login-notifier/
 */
@@ -19,17 +19,18 @@ class HackRepair_Admin_Login_Notifier {
 	);
 
 	public static function init() {
-		// self::$options['admin_email'] = get_option('admin_email');
 		self::$plugin_dir = plugin_dir_path( __FILE__ );
 		$options = get_option( 'hackrepair-admin-login-notifier_options' );
 		self::$options = wp_parse_args( $options, self::$options );
 		if ( is_admin() ) {
 			add_action( 'admin_menu', array( 'HackRepair_Admin_Login_Notifier', 'admin_init'  ) );
 		}
+		add_filter( 'plugin_action_links', 			array( 'HackRepair_Admin_Login_Notifier', 'action_link' ), 10, 4 );
 
 		add_action( 'wp_login', array( 'HackRepair_Admin_Login_Notifier', 'login' ), 10, 2 );
 		load_plugin_textdomain( 'hackrepair-admin-login-notifier', FALSE, basename( dirname( __FILE__ ) ) );
 	}
+
 	public static function admin_init() {
 		global $pagenow;
 		require_once ( self::$plugin_dir . 'includes/options.php' );
@@ -66,6 +67,13 @@ class HackRepair_Admin_Login_Notifier {
 			'HackRepair_Admin_Login_Notifier',
 			'hackrepair-admin-login-notifier-settings'
 		);
+	}
+
+	public static function action_link($actions, $plugin_file, $plugin_data, $context) {
+		if ( 'hackrepair-admin-login-notifier/hackrepair-admin-login-notifier.php' == $plugin_file ) {
+			$actions['settings'] = '<a href="' . admin_url( 'options-general.php?page=hackrepair-admin-login-notifier-settings' ) . '" aria-label="' . esc_attr( sprintf( __( '%s Settings', 'hackrepair-admin-login-notifier' ), $plugin_data['Name'] ) ) . '">' . __( 'Settings', 'hackrepair-admin-login-notifier' ) . '</a>';
+		}
+		return $actions;
 	}
 
 
