@@ -59,7 +59,7 @@ Additional notification recipients may be selected via the plugin Settings page.
 
 Short answer: I tire of  complicated plugins.
 
-Long answer: Most login notification plugins require several steps to fully configure. I've solved that "problem" with The Hack Repair Guy's Admin Login Notifier. Time is precious–and I got none to spare!
+Long answer: Most login notification plugins require several steps to fully configure. I've solved that "problem" with The Hack Repair Guy's Admin Login Notifier. Time is precious–and and I've got none to spare!
 
 
 +++
