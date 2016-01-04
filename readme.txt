@@ -66,7 +66,7 @@ Long answer: Most login notification plugins require several steps to fully conf
 
 **Donations?**
 
-If you find The Hack Repair Guy's Admin Login Notifier useful, please consider donating $1 or more to our mutual cause.
+If you find The Hack Repair Guy's Admin Login Notifier useful, please consider donating a cup of coffee or more to our mutual cause.
 
 Every dollar counts and will help our beleaguered plugin developers concentrate on improvements and less about next month's rent. Donate for the cause at https://hackrepair.com/about/hackrepair-admin-login-notifier
 
