@@ -21,7 +21,7 @@ Users with Administrator role set can delete your entire website.
 
 Stop the hackers before they eat your lunch.
 
-* With notification of each Administrator account login emailed to you, you may be able take action before hackers edit or delete your content.
+* With notification of each Administrator account login emailed to you, you may be able to take action before hackers edit or delete your content.
 
 With The Hack Repair Guy's Administrator Login Notifier, tailored to admin notification only, you'll have a professional login notification system in place in seconds.
 
