@@ -37,7 +37,7 @@ Many of the established security plugins include Administrator login notificatio
 
 Why make it so hard–geez!
 
-This has left me with a choice. Either I recommend my clients install one of those 100+ feature plugins, which include notification as an extra feature, or I eliminate all frustration and create a 1-click to install notification plugin for my clients.
+This has left me with a choice. Either I recommend clients install one of those 100+ feature plugins, which include notification as an extra feature, or I eliminate all frustration and create a 1-click to install notification plugin for my clients.
 
 So The Hack Repair Guy's Admin Login Notifier plugin was born.
 
