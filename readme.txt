@@ -86,7 +86,7 @@ The Hack Repair Guy's Admin Login Notifier will auto save your email account upo
 = If you would prefer to manually install The Hack Repair Guy's Admin Login Notifier follow these instructions: =
 
 * Upload the hackrepair-admin-login-notifier folder to the /wp-content/plugins/ directory
-* Activate the plugin through the Plugins menu in WordPress
+* Activate the plugin through the Plugins menu in WordPress.
 
 = More documentation: =
 
