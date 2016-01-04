@@ -51,9 +51,9 @@ Long answer: Deactivation is the recommended way to turn off notifications as we
 
 Short answer: Change the setting in `WP Admin > Settings > General > Email Address`.
 
-Long answer: The Hack Repair Guy's Admin Login Notifier uses WordPress' default admin email setting - this notification will be sent to the same email address WordPress uses to send you other notifications.
+Long answer: The Hack Repair Guy's Admin Login Notifier uses WordPress' default admin email setting - this notification will be sent to the same email address WordPress uses to send you other notifications. 
 
-Additional notification recipients can be selected via plugin settings page (`WP Admin > Settings > Admin Login Notifier`). Just select which admin-level users should be notified. 
+Additional notification recipients may be selected via the plugin Settings page. Just select which users should be notified and click Save. 
 
 **3. Why did you create this plugin?**
 
