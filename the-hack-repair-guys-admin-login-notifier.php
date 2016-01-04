@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/hackrepair-admin-login-notifier/
 Description: Receive email notification each time an Administrator logs into your WordPress dashboard.
 Author: Jim Walker, The Hack Repair Guy
 Version: 1.0.0
-Text Domain: hackrepair-admin-login-notifier
+Text Domain: the-hack-repair-guys-admin-login-notifier
 Author URI: http://hackrepair.com/hackrepair-admin-login-notifier/
 */
 
@@ -28,14 +28,14 @@ class HackRepair_Admin_Login_Notifier {
 		add_filter( 'plugin_action_links', 			array( 'HackRepair_Admin_Login_Notifier', 'action_link' ), 10, 4 );
 
 		add_action( 'wp_login', array( 'HackRepair_Admin_Login_Notifier', 'login' ), 10, 2 );
-		load_plugin_textdomain( 'hackrepair-admin-login-notifier', FALSE, basename( dirname( __FILE__ ) ) );
+		load_plugin_textdomain( 'the-hack-repair-guys-admin-login-notifier', FALSE, basename( dirname( __FILE__ ) ) );
 	}
 
 	public static function admin_init() {
 		global $pagenow;
 		require_once ( self::$plugin_dir . 'includes/options.php' );
 		$user_list = array(
-			-1 => sprintf( __( 'WordPress Notification Email (%s)', 'hackrepair-admin-login-notifier' ), get_option( 'admin_email' ) ),
+			-1 => sprintf( __( 'WordPress Notification Email (%s)', 'the-hack-repair-guys-admin-login-notifier' ), get_option( 'admin_email' ) ),
 		);
 		$users = get_users(array( 'role' => 'administrator' ) );
 		foreach ($users as $key => $user) {
@@ -47,10 +47,10 @@ class HackRepair_Admin_Login_Notifier {
 				'callback' => '',
 				'options' => array(
 					'notify' => array(
-						'title'=>__( 'Email Notifications to:', 'hackrepair-admin-login-notifier' ),
+						'title'=>__( 'Email Notifications to:', 'the-hack-repair-guys-admin-login-notifier' ),
 						'args' => array (
 							'values' => $user_list,
-							'description' => __( 'The email contacts selected above will be notified each time an administrator logs into this dashboard', 'hackrepair-admin-login-notifier' ),
+							'description' => __( 'The email contacts selected above will be notified each time an administrator logs into this dashboard', 'the-hack-repair-guys-admin-login-notifier' ),
 						),
 						'callback' => 'checklist',
 					),
@@ -60,8 +60,8 @@ class HackRepair_Admin_Login_Notifier {
 		$tabs = array();
 		HackRepair_Admin_Login_Notifier_Options::init(
 			'hackrepair-admin-login-notifier',
-			__( 'Admin Login Notifier',          'hackrepair-admin-login-notifier' ),
-			__( "The Hack Repair Guy's Admin Login Notifier: Settings", 'hackrepair-admin-login-notifier' ),
+			__( 'Admin Login Notifier',          'the-hack-repair-guys-admin-login-notifier' ),
+			__( "The Hack Repair Guy's Admin Login Notifier: Settings", 'the-hack-repair-guys-admin-login-notifier' ),
 			$fields,
 			$tabs,
 			'HackRepair_Admin_Login_Notifier',
@@ -70,8 +70,8 @@ class HackRepair_Admin_Login_Notifier {
 	}
 
 	public static function action_link($actions, $plugin_file, $plugin_data, $context) {
-		if ( 'hackrepair-admin-login-notifier/hackrepair-admin-login-notifier.php' == $plugin_file ) {
-			$actions['settings'] = '<a href="' . admin_url( 'options-general.php?page=hackrepair-admin-login-notifier-settings' ) . '" aria-label="' . esc_attr( sprintf( __( '%s Settings', 'hackrepair-admin-login-notifier' ), $plugin_data['Name'] ) ) . '">' . __( 'Settings', 'hackrepair-admin-login-notifier' ) . '</a>';
+		if ( 'the-hack-repair-guys-admin-login-notifier/the-hack-repair-guys-admin-login-notifier.php' == $plugin_file ) {
+			$actions['settings'] = '<a href="' . admin_url( 'options-general.php?page=hackrepair-admin-login-notifier-settings' ) . '" aria-label="' . esc_attr( sprintf( __( '%s Settings', 'the-hack-repair-guys-admin-login-notifier' ), $plugin_data['Name'] ) ) . '">' . __( 'Settings', 'the-hack-repair-guys-admin-login-notifier' ) . '</a>';
 		}
 		return $actions;
 	}
@@ -87,8 +87,8 @@ class HackRepair_Admin_Login_Notifier {
 
 	private static function _notify( $user ) {
 		$data = array(
-			'subject' => __( '%domain% - Admin %user_login% logged in at %time%', 'hackrepair-admin-login-notifier' ),
-			'content' => __( "User '%user_login%' has successfully logged into %domain% from %ip%, %date%, at %time% \r\n\r\nAdmin notification provided by %plugin_title_full%, %plugin_link%", 'hackrepair-admin-login-notifier' ),
+			'subject' => __( '%domain% - Admin %user_login% logged in at %time%', 'the-hack-repair-guys-admin-login-notifier' ),
+			'content' => __( "User '%user_login%' has successfully logged into %domain% from %ip%, %date%, at %time% \r\n\r\nAdmin notification provided by %plugin_title_full%, %plugin_link%", 'the-hack-repair-guys-admin-login-notifier' ),
 		);
 		$data['subject'] = apply_filters( 'hackrepair_admin_login_notifier_subject', $data['subject'], $user );
 		$data['content'] = apply_filters( 'hackrepair_admin_login_notifier_content', $data['content'], $user );
@@ -115,8 +115,8 @@ class HackRepair_Admin_Login_Notifier {
 
 	private static function _replace_data( $content, $user, $data = array() ) {
 		$defaults = array(
-			'plugin_title'  	=> __( 'Admin Login Notifier', 'hackrepair-admin-login-notifier' ),
-			'plugin_title_full' => __( "The Hack Repair Guy's Admin Login Notifier", 'hackrepair-admin-login-notifier' ),
+			'plugin_title'  	=> __( 'Admin Login Notifier', 'the-hack-repair-guys-admin-login-notifier' ),
+			'plugin_title_full' => __( "The Hack Repair Guy's Admin Login Notifier", 'the-hack-repair-guys-admin-login-notifier' ),
 			'plugin_link'		=> 'https://hackrepair.com/about/hackrepair-admin-login-notifier',
 			'url' 				=> get_bloginfo('url'),
 			'domain'			=> parse_url( get_bloginfo('url'), PHP_URL_HOST ),
