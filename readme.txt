@@ -13,7 +13,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 = The Hack Repair Guy's Admin Login Notifier notifies you the moment an Administrator user logs into your WordPress dashboard. =
 
-https://youtu.be/SUdGH3MkBLE
+[youtube https://www.youtube.com/watch?v=SUdGH3MkBLE&]
+
  
 **Why use The Hack Repair Guy's Admin Login Notifier?**
 
@@ -82,6 +83,9 @@ Every dollar counts and will help our beleaguered plugin developers concentrate 
 * Search for "The Hack Repair Guy's Admin Login Notifier".
 * Click install.
 * Click activate.
+
+[youtube https://www.youtube.com/watch?v=SUdGH3MkBLE&]
+
 
 The Hack Repair Guy's Admin Login Notifier will auto save your email account upon activation and notify you of future Administrator logins. No further configuration is necessary.
 
