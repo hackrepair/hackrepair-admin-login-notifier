@@ -110,7 +110,7 @@ The Hack Repair Guy's Admin Login Notifier will auto save your email account upo
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.2 =
 * Added video and some descriptive text edits
 
 = 1.0.0 =
