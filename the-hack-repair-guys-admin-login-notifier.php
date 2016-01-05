@@ -93,9 +93,9 @@ class HackRepair_Admin_Login_Notifier {
 		$data['content'] = apply_filters( 'hackrepair_admin_login_notifier_content', $data['content'], $user );
 
 		$replace = array(
-			'date' 				=> date( get_option( 'date_format' ) ),
-			'time' 				=> date( get_option( 'time_format' ) ),
-			'datetime' 			=> date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) ),
+			'date' 				=> current_time( get_option( 'date_format' ) ),
+			'time' 				=> current_time( get_option( 'time_format' ) ),
+			'datetime' 			=> current_time( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) ),
 			'ip'				=> $_SERVER['REMOTE_ADDR'],
 		);
 
