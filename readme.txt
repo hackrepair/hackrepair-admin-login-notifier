@@ -13,8 +13,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 = The Hack Repair Guy's Admin Login Notifier notifies you the moment an Administrator user logs into your WordPress dashboard. =
 
-Do you have a spare 30 seconds to add admin login monitoring to your website?
-
 [youtube https://www.youtube.com/watch?v=SUdGH3MkBLE]
 
  
