@@ -5,7 +5,7 @@ Tags: admin login, email notification, login notification, login email, admin em
 Donate link: https://hackrepair.com/about/hackrepair-admin-login-notifier
 Requires at least: 4.2
 Tested up to: 4.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Do you have a spare 30 seconds to add admin login monitoring to your website?
 
-[youtube https://www.youtube.com/watch?v=SUdGH3MkBLE&]
+[youtube https://www.youtube.com/watch?v=SUdGH3MkBLE]
 
  
 **Why use The Hack Repair Guy's Admin Login Notifier?**
@@ -86,7 +86,7 @@ Every dollar counts and will help our beleaguered plugin developers concentrate 
 * Click install.
 * Click activate.
 
-[youtube https://www.youtube.com/watch?v=SUdGH3MkBLE&]
+[youtube https://www.youtube.com/watch?v=SUdGH3MkBLE]
 
 
 The Hack Repair Guy's Admin Login Notifier will auto save your email account upon activation and notify you of future Administrator logins. No further configuration is necessary.
@@ -105,12 +105,12 @@ The Hack Repair Guy's Admin Login Notifier will auto save your email account upo
 
 == Screenshots ==
 
-[youtube https://www.youtube.com/watch?v=i_Gn22bWLVs]
+[youtube https://www.youtube.com/watch?v=SUdGH3MkBLE]
 
 
 == Changelog ==
 
-= 1.0.2 =
+= 1.0.4 =
 * Added video and some descriptive text edits
 
 = 1.0.0 =
