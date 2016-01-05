@@ -4,7 +4,7 @@ Plugin Name: The Hack Repair Guy's Admin Login Notifier
 Plugin URI: http://wordpress.org/extend/plugins/hackrepair-admin-login-notifier/
 Description: Receive email notification each time an Administrator logs into your WordPress dashboard.
 Author: Jim Walker, The Hack Repair Guy
-Version: 1.0.1
+Version: 1.0.2
 Text Domain: the-hack-repair-guys-admin-login-notifier
 Author URI: http://hackrepair.com/hackrepair-admin-login-notifier/
 */
