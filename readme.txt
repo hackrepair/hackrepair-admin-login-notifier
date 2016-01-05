@@ -105,7 +105,11 @@ The Hack Repair Guy's Admin Login Notifier will auto save your email account upo
 
 [youtube https://www.youtube.com/watch?v=i_Gn22bWLVs]
 
+
 == Changelog ==
+
+= 1.0.1 =
+* Added video and some descriptive text edits
 
 = 1.0.0 =
 * Ready for the WordPress repository
