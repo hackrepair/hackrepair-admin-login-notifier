@@ -103,6 +103,8 @@ The Hack Repair Guy's Admin Login Notifier will auto save your email account upo
 
 == Screenshots ==
 
+[youtube https://www.youtube.com/watch?v=i_Gn22bWLVs]
+
 == Changelog ==
 
 = 1.0.0 =
