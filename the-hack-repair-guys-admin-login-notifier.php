@@ -58,7 +58,7 @@ class HackRepair_Admin_Login_Notifier {
 						'title'=>__( 'Exclude IP addresses', 'the-hack-repair-guys-admin-login-notifier' ),
 						'args' => array (
 							// 'values' => $user_list,
-							'description' => __( 'A comma-separated list of IP addresses that will not trigger an notification email.', 'the-hack-repair-guys-admin-login-notifier' ),
+							'description' => __( 'A comma-separated list of IP addresses that will not trigger a notification email.', 'the-hack-repair-guys-admin-login-notifier' ),
 						),
 						'callback' => 'text',
 					),
