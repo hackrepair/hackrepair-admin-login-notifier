@@ -15,6 +15,7 @@ class HackRepair_Admin_Login_Notifier {
 	public static $options = array(
 		'notify' 		=> array(-1),
 		'capability' 	=> 'manage_options',
+		'exclude_ip'	=> '',
 	);
 
 	public static function init() {
@@ -53,6 +54,14 @@ class HackRepair_Admin_Login_Notifier {
 						),
 						'callback' => 'checklist',
 					),
+					'exclude_ip' => array(
+						'title'=>__( 'Exclude IP addresses', 'the-hack-repair-guys-admin-login-notifier' ),
+						'args' => array (
+							// 'values' => $user_list,
+							'description' => __( 'A comma-separated list of IP addresses that will not trigger an notification email.', 'the-hack-repair-guys-admin-login-notifier' ),
+						),
+						'callback' => 'text',
+					),
 				),
 			),
 		);
@@ -79,7 +88,9 @@ class HackRepair_Admin_Login_Notifier {
 
 	public static function login( $user_login, $user ) {
 		$capability = apply_filters( 'hackrepair_admin_login_notifier_capability', self::$options['capability'] );
-		if ( $user->has_cap( $capability ) ) {
+		$ips = self::$options['exclude_ip'];
+		$ips = explode( ',', $ips );
+		if ( $user->has_cap( $capability ) && !in_array( $_SERVER['REMOTE_ADDR'], $ips ) ) {
 			self::_notify( $user );
 		}
 	}
