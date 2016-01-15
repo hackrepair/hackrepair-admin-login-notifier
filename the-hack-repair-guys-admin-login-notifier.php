@@ -4,7 +4,7 @@ Plugin Name: The Hack Repair Guy's Admin Login Notifier
 Plugin URI: https://wordpress.org/plugins/the-hack-repair-guys-admin-login-notifier/
 Description: Receive email notification each time an Administrator logs into your WordPress dashboard.
 Author: Jim Walker, The Hack Repair Guy
-Version: 2.0.0
+Version: 2.0.1
 Author URI: http://hackrepair.com/hackrepair-admin-login-notifier/
 */
 
@@ -98,7 +98,7 @@ class HackRepair_Admin_Login_Notifier {
 	private static function _notify( $user ) {
 		$data = array(
 			'subject' => __( '%domain% - Admin %user_login% logged in at %time%', 'the-hack-repair-guys-admin-login-notifier' ),
-			'content' => __( "User '%user_login%' has successfully logged into %domain% from %ip%, %date%, at %time% \r\n\r\nAdmin notification provided by %plugin_title_full%, %plugin_link%", 'the-hack-repair-guys-admin-login-notifier' ),
+			'content' => __( "User '%user_login%' has successfully logged into http://%domain% from %ip%, %date%, at %time% \r\n\r\nAdmin notification provided by %plugin_title_full%, %plugin_link%", 'the-hack-repair-guys-admin-login-notifier' ),
 		);
 		$data['subject'] = apply_filters( 'hackrepair_admin_login_notifier_subject', $data['subject'], $user );
 		$data['content'] = apply_filters( 'hackrepair_admin_login_notifier_content', $data['content'], $user );
