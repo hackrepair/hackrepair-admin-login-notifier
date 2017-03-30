@@ -4,8 +4,8 @@ Contributors: hackrepair, tvcnet
 Tags: admin login, email notification, login notification, login email, admin email
 Donate link: https://hackrepair.com/about/hackrepair-admin-login-notifier
 Requires at least: 4.2
-Tested up to: 4.5.3
-Stable tag: 2.0.1
+Tested up to: 4.7.3
+Stable tag: 2.0.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -107,6 +107,9 @@ The Hack Repair Guy's Admin Login Notifier will auto save your email account upo
 
 
 == Changelog ==
+
+= 2.0.2 =
+* 4.7.3 Compatible
 
 = 2.0.1 =
 * added http:// to email body text.
