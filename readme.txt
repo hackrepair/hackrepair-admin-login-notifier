@@ -4,7 +4,7 @@ Contributors: hackrepair, tvcnet
 Tags: admin login, email notification, login notification, login email, admin email
 Donate link: https://hackrepair.com/about/hackrepair-admin-login-notifier
 Requires at least: 4.2
-Tested up to: 4.7.3
+Tested up to: 4.8
 Stable tag: 2.0.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
